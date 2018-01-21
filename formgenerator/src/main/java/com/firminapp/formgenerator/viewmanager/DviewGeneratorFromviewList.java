@@ -5,6 +5,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import org.json.JSONArray;
+
 import java.util.ArrayList;
 
 /**
@@ -13,6 +15,7 @@ import java.util.ArrayList;
 
 public class DviewGeneratorFromviewList extends ArrayList<View> {
     private Context context;
+
     private String TAG=DviewGeneratorFromviewList.class.getSimpleName();
 
     public DviewGeneratorFromviewList(Context context){
@@ -44,6 +47,12 @@ public class DviewGeneratorFromviewList extends ArrayList<View> {
 
         Log.e(TAG," nom de vue"+this.size());
         return rootview;
+    }
+    public JSONArray collectedData()
+    {
+        JSONArray array=new JSONArray();
+
+        return array;
     }
     //liste de vi
 

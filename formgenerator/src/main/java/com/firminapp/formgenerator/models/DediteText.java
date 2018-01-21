@@ -18,12 +18,14 @@ import org.json.JSONObject;
 
 public class DediteText extends android.support.v7.widget.AppCompatEditText {
     private JSONObject jsondescriptor;
+    private String kefield;
     private DViewType viewType;
     public DediteText(Context context, JSONObject descriptor) {
         super(context);
         this.viewType= DViewType.DeditText;
         this.jsondescriptor=descriptor;
         this.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
        this.setVisibility(VISIBLE);
         String hint="";
         //type d'entrées: text, nombre,tel..
