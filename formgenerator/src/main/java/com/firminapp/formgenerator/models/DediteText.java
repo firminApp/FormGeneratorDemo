@@ -32,6 +32,7 @@ public class DediteText extends android.support.v7.widget.AppCompatEditText {
         String contentType="";
         try {
            hint= jsondescriptor.has("label")?jsondescriptor.getString("label"):"";
+           this.kefield=descriptor.has("keyfield")?descriptor.getString("keyfield"):"";
            contentType= jsondescriptor.has("contentType")?jsondescriptor.getString("contentType"):"";
             switch (contentType){
                 case "text":
@@ -68,5 +69,21 @@ public class DediteText extends android.support.v7.widget.AppCompatEditText {
 
     public void setJsondescriptor(JSONObject jsondescriptor) {
         this.jsondescriptor = jsondescriptor;
+    }
+
+    public String getKefield() {
+        return kefield;
+    }
+
+    public void setKefield(String kefield) {
+        this.kefield = kefield;
+    }
+
+    public DViewType getViewType() {
+        return viewType;
+    }
+
+    public void setViewType(DViewType viewType) {
+        this.viewType = viewType;
     }
 }

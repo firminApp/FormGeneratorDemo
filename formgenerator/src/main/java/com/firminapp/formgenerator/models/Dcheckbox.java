@@ -13,11 +13,11 @@ import org.json.JSONObject;
  * Created by firmin on 20/01/18.
  */
 
-public class DtextView extends android.support.v7.widget.AppCompatTextView {
+public class Dcheckbox extends android.support.v7.widget.AppCompatCheckBox {
     private JSONObject jsondescriptor;
     private String kefield;
     private DViewType viewType;
-    public DtextView(Context context,JSONObject descriptor) {
+    public Dcheckbox(Context context, JSONObject descriptor) {
         super(context);
         this.viewType=DViewType.Dtextview;
         this.jsondescriptor=descriptor;
@@ -30,16 +30,16 @@ public class DtextView extends android.support.v7.widget.AppCompatTextView {
         this.setText(text);
 
     }
-
-    public DtextView(Context context, @Nullable AttributeSet attrs) {
+    public  Dcheckbox generate(){
+        return this;
+    }
+    public Dcheckbox(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public DtextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public Dcheckbox(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public  DtextView generate(){
-        return this;
-    }
+
 }

@@ -5,7 +5,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import com.firminapp.formgenerator.models.Dcheckbox;
 import com.firminapp.formgenerator.models.DediteText;
+import com.firminapp.formgenerator.models.Dmultiselect;
+import com.firminapp.formgenerator.models.Dspinner;
+import com.firminapp.formgenerator.models.DtextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,15 +42,19 @@ public class GenerateViewFromJsonObjet {
                         view= (EditText)new DediteText(context,descriptor).generate();
                         break;
                     case "textview":
+                        view=(DtextView)new DtextView(context,descriptor).generate();
                        // view= new DtextView(context,descriptor).generate();
                         break;
                     case "spinner":
+                        view=(Dspinner)new Dspinner(context,descriptor).generate();
                         //view= new Dspinner(context,descriptor).generate();
                         break;
                     case "checkbox":
-                        //view= new Dcheckbox(context,descriptor).generate();
+
+                        view= new Dcheckbox(context,descriptor).generate();
                         break;
                     case "multiselect":
+                        view= new Dmultiselect(context,descriptor).generate();
                         break;
 
 

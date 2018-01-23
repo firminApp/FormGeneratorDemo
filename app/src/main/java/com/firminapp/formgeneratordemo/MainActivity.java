@@ -12,27 +12,41 @@ import org.json.JSONException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String s="[{\"type\":\"edittext\",\n" +
-            "  \"label\":\"entrer un texte ici\",\n" +
-            "\"contentType\":\"text\"\n" +
-            "\n" +
-            "  \n" +
-            "},{\n" +
-            "  \"type\":\"edittext\",\n" +
-            "  \"label\":\"entrer un nombre ici\",\n" +
-            "\"contentType\":\"nombre\"\n" +
-            "  \n" +
-            "},{\n" +
-            "  \"type\":\"edittext\",\n" +
-            "  \"label\":\"entrer un nemero de téléphone  ici\",\n" +
-            "\"contentType\":\"tel\"\n" +
-            "  \n" +
-            "},{\n" +
-            "  \"type\":\"edittext\",\n" +
-            "  \"label\":\"entrer un texte ici\",\n" +
-            "\"contentType\":\"text\"\n" +
-            "  \n" +
-            "}]";
+    private String s="[\n" +
+            "  {\"type\":\"edittext\",\"label\":\"Un edittext pour la saisie\",\"contentType\":\"text\"},\n" +
+            "  {\"type\":\"textview\",\"label\":\"Un textView pour afficher les labeles\",\"contentType\":\"text\"}\n" +
+            "  ,\n" +
+            "  {\"type\":\"checkbox\",\"label\":\"Un checkbox a checker\",\"contentType\":\"text\"}\n" +
+            "  ,\n" +
+            "  {\"type\":\"multiselect\",\"label\":\"Un multiselect\",\"contentType\":\"text\",\n" +
+            "  \"items\":[\n" +
+            "    {\n" +
+            "      \"label\":\"un item 1\"\n" +
+            "    },\n" +
+            "    {\n" +
+            "      \"label\":\"un autre item 1\"\n" +
+            "    }\n" +
+            "    ,\n" +
+            "    {\n" +
+            "      \"label\":\"un autre item 1 le dernier\"\n" +
+            "    }]\n" +
+            "  }\n" +
+            "  ,\n" +
+            "  {\"type\":\"spinner\",\"label\":\"entrer un texte ici\",\"contentType\":\"text\",\n" +
+            "    \"items\":[\n" +
+            "    {\n" +
+            "      \"label\":\"un item 1\"\n" +
+            "    },\n" +
+            "    {\n" +
+            "      \"label\":\"un autre item 1\"\n" +
+            "    }\n" +
+            "    ,\n" +
+            "    {\n" +
+            "      \"label\":\"un autre item 1 le dernier\"\n" +
+            "    }]\n" +
+            "  }\n" +
+            "  ,\n" +
+            "  {\"type\":\"edittext\",\"label\":\"entrer un texte ici\",\"contentType\":\"text\"}]";
     private LinearLayout rootframe;
 
     @Override
