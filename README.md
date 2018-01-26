@@ -10,10 +10,19 @@ ce projet a pour but de faciliter la génération automatique des formulaire dan
 
 insserer just la dépendnce nécessaie dans le fichier gradle de votre projet
 
-dependencies {
- compile 'com.github.firminApp:dformgenerator:-SNAPSHOT'
-  } 
-  Aussi si cela n'a pas déja été fait ajouter jitpak allprojects { repositories { ... maven { url 'https://jitpack.io' } } }
+    dependencies {
+     compile 'com.github.firminApp:dformgenerator:-SNAPSHOT'
+      } 
+Aussi si cela n'a pas déja été fait ajouter jitpak allprojects 
+  
+   `{ 
+    repositories { 
+                 ... 
+                 maven {
+                    url 'https://jitpack.io' 
+                        } 
+                    }
+    }`
 #version
 Cette toute première version de la librairie ne supporte que la création de quelques vues à savoir:
 **EditText (DeditText)**

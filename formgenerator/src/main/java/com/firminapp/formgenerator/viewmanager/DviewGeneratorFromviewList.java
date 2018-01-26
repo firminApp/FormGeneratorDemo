@@ -29,7 +29,7 @@ public class DviewGeneratorFromviewList extends ArrayList<View> {
         LinearLayout rootview=null;
         if (this.size()<=0)
         {
-            Log.e(TAG," nom de vue siw 0"+this.size());
+            Log.e(TAG," nombre de vue "+this.size());
             return rootview;
         }
         else
@@ -45,9 +45,10 @@ public class DviewGeneratorFromviewList extends ArrayList<View> {
         }
 
 
-        Log.e(TAG," nom de vue"+this.size());
+        Log.e(TAG," nombre de vue"+this.size());
         return rootview;
     }
+    //return the collected data from each field of the form
     public JSONArray collectedData()
     {
         JSONArray array=new JSONArray();

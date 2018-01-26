@@ -50,7 +50,6 @@ public class GenerateViewFromJsonObjet {
                         //view= new Dspinner(context,descriptor).generate();
                         break;
                     case "checkbox":
-
                         view= new Dcheckbox(context,descriptor).generate();
                         break;
                     case "multiselect":

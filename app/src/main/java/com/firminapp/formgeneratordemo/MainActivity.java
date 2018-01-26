@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.firminapp.formgenerator.viewmanager.DVgenerator;
 import com.firminapp.formgenerator.viewmanager.DviewsGeneretFromJsonArray;
 
 import org.json.JSONArray;
@@ -60,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        View v=new DviewsGeneretFromJsonArray(this,array).generate().generate();
+        //code de l alibrairie
+        DVgenerator dvg=new DVgenerator(array,this);
+        View v=dvg.generate();
         setContentView(v);
         // LinearLayout fl=(LinearLayout) v;
         // rootframe.addView(v);
