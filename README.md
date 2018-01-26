@@ -11,7 +11,7 @@ ce projet a pour but de faciliter la génération automatique des formulaire dan
 insserer just la dépendnce nécessaie dans le fichier gradle de votre projet
 
     dependencies {
-     compile 'com.github.firminApp:dformgenerator:-SNAPSHOT'
+     compile 'com.github.firminApp:dformgenerator:1.0.0'
       } 
 Aussi si cela n'a pas déja été fait ajouter jitpak allprojects 
   
